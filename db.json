@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "id": 1780514957959,
+      "name": "doctor_test",
+      "email": "doctor_test@gmail.com",
+      "password": "password1234",
+      "profilePictureUrl": null,
+      "roles": [
+        {
+          "name": "DOCTOR"
+        }
+      ]
+    },
+    {
+      "id": 1780514993077,
+      "name": "patient_test",
+      "email": "patient_test@gmail.com",
+      "password": "password1234",
+      "profilePictureUrl": null,
+      "roles": [
+        {
+          "name": "PATIENT"
+        }
+      ]
+    }
+  ],
+  "patients": [
+    {
+      "id": 1780514993079,
+      "userId": 1780514993077,
+      "firstName": "patient_firstname_test",
+      "lastName": "patient_lastname_test",
+      "phone": "1234567890",
+      "dateOfBirth": "2026-06-12",
+      "knownAllergies": "",
+      "bloodGroup": "A_POSITIVE",
+      "genotype": "AA",
+      "user": {
+        "id": 1780514993077,
+        "email": "patient_test@gmail.com",
+        "name": "patient_test"
+      }
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1780514957960,
+      "userId": 1780514957959,
+      "firstName": "doctor_firstname_test",
+      "lastName": "doctor_lastname_test",
+      "specialization": "GENERAL_PRACTICE",
+      "licenseNumber": "1234567890",
+      "user": {
+        "id": 1780514957959,
+        "email": "doctor_test@gmail.com",
+        "name": "doctor_test"
+      }
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1780515254413,
+      "doctorId": 1780514957960,
+      "purposeOfConsultation": "Fever",
+      "initialSymptoms": "Cough and elevated body temperature",
+      "startTime": "2026-07-20T08:30:00.000Z",
+      "status": "COMPLETED",
+      "meetingLink": "https://meet.example.com/1780515254413",
+      "doctor": {
+        "id": 1780514957960,
+        "firstName": "doctor_test",
+        "lastName": "",
+        "specialization": "GENERAL_PRACTICE"
+      },
+      "patient": {
+        "id": 1780514993079,
+        "firstName": "patient_firstname_test",
+        "lastName": "patient_lastname_test",
+        "dateOfBirth": "2026-06-12",
+        "bloodGroup": "A_POSITIVE",
+        "genotype": "AA",
+        "knownAllergies": "",
+        "user": {
+          "email": "patient_test@gmail.com"
+        }
+      }
+    }
+  ],
+  "consultations": [
+    {
+      "id": 1780515687177,
+      "appointmentId": 1780515254413,
+      "subjectiveNotes": "The patient has had a cough and fever for three days. At first, the cough was dry, but now it is productive with yellowish sputum. The fever reaches 38.5 °C, especially in the evening. He also has a headache and feels tired. He has not traveled recently and has had no known contact with COVID-19 cases. He tried acetaminophen, which provided temporary relief.",
+      "objectiveFindings": "Temperature\t38.3°C\nRespiratory rate\t20 breaths/min\nSpO₂\t97% on room air\nHeart rate\t92 bpm\nBlood pressure\t125/78 mmHg\nLung auscultation\tMinimal crackles at right base\nSputum\tYellow-green\nAppearance\tFebrile patient, slightly fatigued\n",
+      "assessment": "Probable diagnosis: Acute bacterial bronchitis or mild community-acquired pneumonia\n\nDifferential diagnosis: Influenza, COVID-19, upper respiratory viral infection\n\nKey points: Productive cough, fever >38°C for 3 days, pulmonary crackles, probable leukocytosis",
+      "plan": "Diagnostic tests:\n\nComplete blood count with differential\n\nCRP (C-reactive protein)\n\nCOVID-19 and influenza swab\n\nChest X-ray (if symptoms worsen)\n\nMedication:\n\nAntibiotic: Amoxicillin 500 mg 3 times/day for 7 days\n\nAntipyretic: Acetaminophen 500-1000 mg every 6-8 hours as needed\n\nExpectorant cough syrup\n\nAdequate hydration and rest\n\nRed flags (return immediately if):\n\nDifficulty breathing\n\nFever >39°C not responding to medication\n\nSpO₂ <94%\n\nWorsening after 48 hours of antibiotics\n\nFollow-up: Reevaluation in 3 days or sooner if worsening",
+      "patientId": 1,
+      "consultationDate": "2026-06-03T19:41:27.177Z"
+    }
+  ],
+  "specializations": [
+    "CARDIOLOGY",
+    "DERMATOLOGY",
+    "GENERAL_PRACTICE",
+    "NEUROLOGY",
+    "ORTHOPEDICS",
+    "PEDIATRICS",
+    "PSYCHIATRY",
+    "RADIOLOGY",
+    "SURGERY",
+    "UROLOGY"
+  ],
+  "bloodgroups": [
+    "A_POSITIVE",
+    "A_NEGATIVE",
+    "B_POSITIVE",
+    "B_NEGATIVE",
+    "AB_POSITIVE",
+    "AB_NEGATIVE",
+    "O_POSITIVE",
+    "O_NEGATIVE"
+  ],
+  "genotypes": [
+    "AA",
+    "AS",
+    "SS",
+    "AC",
+    "SC",
+    "CC"
+  ]
+}
